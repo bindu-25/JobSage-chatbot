@@ -39,9 +39,9 @@ st.title("💡 AI Mock Interviewer")
 
 # Intro step
 if st.session_state.step == "intro":
-    st.write("👋 Hi there! I’ll be your friendly AI interviewer today. "
+    st.write("👋 Hi there! I am JobSage, a Hiring Assistant chatbot for TalentScout. I’ll be your  AI interviewer today. "
              "I’ll ask you a few details first, then confirm with you, "
-             "and finally we’ll jump into 3 tough technical questions. 🚀")
+             "and finally, we’ll jump into 3 tough technical questions. 🚀")
     if st.button("Start"):
         st.session_state.step = "details"
         st.rerun()
@@ -106,3 +106,4 @@ elif st.session_state.step == "questions":
             st.rerun()
     else:
         st.success("🎉 That’s the end of your mock interview! Great job!")
+
